@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Data Science Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #263449;
+    }
+
+    header h2 {
+      color: #38bdf8;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a, a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    nav a:hover, a:hover {
+      color: #7dd3fc;
+    }
+
+    .hero {
+      padding: 100px 8%;
+      min-height: 400px;
+      background: radial-gradient(circl at 85% 25%
+      #164e63 0,
+      #0f172a 40%);
+    }
+
+    .hero p, section p {
+      color: #cbd5e1;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.3rem, 6vw, 4rem);
+      line-height: 1.2;
+      margin: 15px 0;
+    }
+
+    .accent {
+      color: #38bdf8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 11px 20px;
+      background: #0284c7;
+      color: white;
+      border-radius: 8px;
+    }
+
+    section {
+      padding: 60px 8%;
+      scroll-margin-top: 20px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 22px;
+      border-radius: 14px;
+      border: 1px solid #334155;
+      transition: transform 0.25s ease,border-colour 0.25s ease;
+    }
+
+    .card:hover{
+        transform: translateY(-5px);
+        border-color: #38bdf8;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #7dd3fc;
+    }
+
+    .card p {
+      margin-bottom: 12px;
+    }
+
+    #contact a {
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #263449;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      .hero {
+        padding: 65px 5%;
+      }
+
+      section {
+        padding: 45px 5%;
+      }
+
+      nav {
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>MyPortfolio.</h2>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <p class="accent">HELLO, I'M RAJAT SHARMA</p>
+
+      <h1>Aspiring <span class="accent">Data Scientist</span></h1>
+
+      <p>
+         I am a Data Science engineering student who enjoys
+  learning how data can be used to solve practical problems.
+  I am developing my skills in Python, data analysis,
+  statistics, and machine learning. My goal is to work on
+  meaningful projects, strengthen my technical foundation,
+  and grow into a skilled Data Scientist.
+      </p>
+
+      <a class="btn" href="#projects">Explore My Projects</a>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+
+      <p>
+        I am an engineering student building my skills in
+        programming, statistics, data analysis, and machine
+        learning. I am looking for opportunities to apply my
+        knowledge to real-world problems and grow as a data
+        science professional.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+
+      <div class="skills">
+        <div class="card">
+          <h3>Programming</h3>
+          <p>Python, R , Java</p>
+        </div>
+
+        <div class="card">
+          <h3>Data Analysis</h3>
+          <p>NumPy, Pandas,</p>
+        </div>
+
+        <div class="card">
+          <h3>Visualization</h3>
+          <p>Matplotlib, Power BI</p>
+        </div>
+
+        <div class="card">
+          <h3>Core Concepts</h3>
+          <p>Statistics, SQL, and machine learning fundamentals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+
+      <div class="projects">
+        <div class="card">
+          <h3>Student Performance Analysis</h3>
+          <p>
+            Analyze student data, explore patterns, and visualize
+            factors associated with academic performance.
+          </p>
+          <p><strong>Tools:</strong> Python, Pandas, Matplotlib</p>
+          <a href="https://github.com/">Add project link</a>
+        </div>
+
+        <div class="card">
+          <h3>Exploratory Data Analysis</h3>
+          <p>
+            Clean a dataset, investigate trends, handle missing
+            values, and communicate useful findings.
+          </p>
+          <p><strong>Tools:</strong> Python, Pandas, Seaborn</p>
+          <a href="https://github.com/">Add project link</a>
+        </div>
+
+        <div class="card">
+          <h3>Machine Learning Project</h3>
+          <p>
+            Build and evaluate a beginner machine-learning model
+            to solve a clearly defined prediction problem.
+          </p>
+          <p><strong>Tools:</strong> Python, scikit-learn</p>
+          <a href="https://github.com/">Add project link</a>
+        </div>
+      </div>
+
+      <p style="margin-top: 20px;">
+        Note: These are project ideas for now, not claims that
+        the projects have already been completed.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <p>
+        I am interested in learning opportunities and Data Science
+        internships.
+      </p>
+
+      <p style="margin-top: 12px;">
+        Email: <a href="mailto:rajatvsharma2@gmail.com">
+          rajatvsharma2@gmail.com
+        </a>
+      </p>
+
+      <p>GitHub: <a href="https://github.com/">Your GitHub profile</a></p>
+
+      <p>LinkedIn: <a href="https://www.linkedin.com/">Your LinkedIn profile</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 My Data Science Portfolio</p>
+  </footer>
+
+</body>
+</html>
